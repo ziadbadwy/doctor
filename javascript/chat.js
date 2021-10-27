@@ -19,6 +19,7 @@ for (let i = 0; i < coll.length; i++) {
 function getTime() {
     let today = new Date();
     hours = today.getHours();
+    hours = Math.abs(hours-12)
     minutes = today.getMinutes();
 
     if (hours < 10) {
