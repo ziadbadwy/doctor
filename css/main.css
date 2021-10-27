@@ -97,6 +97,9 @@ body {
 
 
 /*home*/
+.main-img{
+    margin-top: 115px;
+}
 /*serve*/
 .serve {
     margin-top: 20px;
@@ -344,6 +347,9 @@ hr{
     .links{
         text-align: left;
     }
+    .main-img{
+        margin-top: 180px;
+    }
 
 }
 
@@ -353,6 +359,9 @@ hr{
         width: 60% !important;
         height: 7vh !important;
 
+    }
+    .main-img{
+        margin-top: 140px;
     }
 
     .navbar ul li a {
