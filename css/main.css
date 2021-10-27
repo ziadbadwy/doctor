@@ -348,9 +348,9 @@ hr{
 }
 
 
-@media(max-width:700px) {
+@media(max-width:500px) {
     .navbar-brand img {
-        width: 50% !important;
+        width: 60% !important;
         height: 6vh !important;
 
     }
@@ -365,8 +365,8 @@ hr{
 }
 @media(max-width:360px) {
     .navbar-brand img {
-        width: 50% !important;
-        height: 6vh !important;
+        width: 60% !important;
+        height: 7vh !important;
 
     }
 }

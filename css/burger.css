@@ -1,7 +1,6 @@
 @media(max-width:780px) {
     .menu-btn {
         position: relative;
-        display: flex;
         justify-content: center;
         align-items: center;
         width: 50px;
