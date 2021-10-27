@@ -5,6 +5,14 @@ function getBotResponse(input) {
         return "Cosmetic fillings : 1500LE\n"+"Orthodontics : 10000LE\n"+"Dental Implants : 500LE \n"+"for more information "
         +"call this number 011297546214";
     }
+    else if (input.search('\.\*ush') > 0 || input.search('\.\*ush') == 0) {
+        return "Cosmetic fillings : 1500LE\n"+"Orthodontics : 10000LE\n"+"Dental Implants : 500LE \n"+"for more information "
+        +"call this number 011297546214";
+    }
+ else if (input.search('\.\*here') > 0 || input.search('\.\*here') == 0) {
+    return "our location is Abbas El akad - nasr City - Cairo";
+
+}
   else if (input.search('\.\*ocation') > 0 || input.search('\.\*ocation') == 0) {
         return "our location is Abbas El akad - nasr City - Cairo";
     }
