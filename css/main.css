@@ -350,7 +350,7 @@ hr{
 
 @media(max-width:500px) {
     .navbar-brand img {
-        width: 60% !important;
+        width: 50% !important;
         height: 6vh !important;
 
     }
@@ -365,8 +365,8 @@ hr{
 }
 @media(max-width:360px) {
     .navbar-brand img {
-        width: 60% !important;
-        height: 7vh !important;
+        width: 50% !important;
+        height: 6vh !important;
 
     }
 }
