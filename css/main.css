@@ -348,14 +348,11 @@ hr{
 }
 
 
-@media(max-width:500px) {
+@media(max-width:700px) {
     .navbar-brand img {
         width: 50% !important;
         height: 6vh !important;
 
-    }
-    .navicon{
-        
     }
 
     .navbar ul li a {
