@@ -361,6 +361,11 @@ hr{
     .collapsible{
         font-size: smaller;
     }
+    .start {
+        
+        height: 5vh;
+       
+    }
 
 }
 @media(max-width:360px) {
