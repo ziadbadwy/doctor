@@ -57,3 +57,17 @@
         transform: rotate(-45deg) translate(35px, 35px);
     }
 }
+@media(max-width:500px) {
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 60px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+        margin-right: 15px;
+    }
+}
