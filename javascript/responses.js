@@ -30,6 +30,18 @@ else if (input.search('\.\*li') > 0 || input.search('\.\*li') == 0) {
 else if (input.search('\.\*ly') > 0 || input.search('\.\*ly') == 0) {
     return "Doctor Ali is a Dental Surgeon and also is a medical professional who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.";
 }
+else if (input.search('\.\*oc') > 0 || input.search('\.\*oc') == 0) {
+    return "Doctor Ali is a Dental Surgeon and also is a medical professional who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.";
+}
+else if (input.search('\.\*ly') > 0 || input.search('\.\*ly') == 0) {
+    return "Doctor Ali is a Dental Surgeon and also is a medical professional who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.";
+}
+else if (input.search('\.\*octor') > 0 || input.search('\.\*octor') == 0) {
+    return "Doctor Ali is a Dental Surgeon and also is a medical professional who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.";
+}
+else if (input.search('\.\*ly') > 0 || input.search('\.\*ly') == 0) {
+    return "Doctor Ali is a Dental Surgeon and also is a medical professional who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.";
+}
 
 
    

@@ -68,5 +68,15 @@ $(document).ready(function() {
 	});
 	
 });
-/*nice scroll*/
+/*social*/
+$("#shareIconsCountInside").jsSocials({
+    url: "http://www.google.com",
+    text: "Google Search Page",
+    showLabel: false,
+    showCount: "inside",
+    shares: ["twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+    
+});
+
+
 

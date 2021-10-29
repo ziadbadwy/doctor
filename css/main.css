@@ -352,8 +352,7 @@ hr{
     }
 
 }
-
-
+/*social contacts*/
 @media(max-width:500px) {
     .navbar-brand img {
         width: 60% !important;
