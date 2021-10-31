@@ -5,4 +5,14 @@ body{
     text-align: left;
 }
 .navbar .nav-link {
-    font-size: 18px !important;}
+    font-size: 18px !important;
+}
+.menu-btn__burger{
+    text-align: left !important;
+
+
+}
+.navbar ul{
+    justify-content: left;
+}
+    
