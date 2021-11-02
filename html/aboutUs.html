@@ -170,11 +170,11 @@
                             <div class="chat-bar-icons">
                                 <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
                                     onclick="heartButton()"></i>
-                                    <i onclick="VoiceReco()" id="chat-icon" style="color: #333;"
-                                    class="voice fas fa-microphone"></i>
+                                <i data-toggle="modal" data-target="#exampleModal" onclick="VoiceReco()" id="chat-icon"
+                                    style="color: #333;" class="voice fas fa-microphone"></i>
                                 <i onclick="sendButton()" style="color: #333;" id="chat-icon"
                                     class="fas fa-paper-plane"></i>
-                                    
+
                             </div>
                         </div>
 
@@ -188,6 +188,30 @@
             </div>
         </div>
 
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Recording...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <i style="color :rgb(228, 21, 62); font-size: 25px; visibility: visible; animation-duration: 500ms;
+                        animation-iteration-count: infinite;
+                        animation-name: pulse;" class="fas fa-circle"></i>
+                        <span id="message"></span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="CloseM()" type="button" class="btn btn-danger" data-dismiss="modal">done</button>
+
+                </div>
+            </div>
+        </div>
     </div>
     <!-- ======= Footer ======= -->
     <footer id="footer" class="mt-5 w-100">
