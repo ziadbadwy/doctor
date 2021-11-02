@@ -9,10 +9,23 @@ body{
 }
 .menu-btn__burger{
     text-align: left !important;
-
-
 }
 .mar{
     margin-top: 140px !important;
+}
+@media(max-width:780px){
+    .del{
+        display:none;
+
+    }
+    .show{
+        display:block;
+
+    }
+    .navbar-brand{
+        position: relative;
+        left:-73px;
+        width:100% !important;
+    }
 }
     
