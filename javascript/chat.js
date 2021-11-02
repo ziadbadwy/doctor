@@ -60,8 +60,8 @@ function getHardResponse(userText) {
 function getResponse() {
     let userText = $("#textInput").val();
 
-    if (userText == "") {
-        userText = "I love Code Palace!";
+    if (userText.trim() == "") {
+        userText.style.display = 'none';
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -103,4 +103,4 @@ $("#textInput").keypress(function (e) {
     if (e.which == 13) {
         getResponse();
     }
-});
+});getBotResponse(input)
