@@ -11,7 +11,7 @@ var closeModal= document.querySelector('#close-modal');
         var speechRecognitionList = new SpeechGrammarList();
         speechRecognitionList.addFromString(grammar, 1);
         recognition.grammars = speechRecognitionList;
-        recognition.lang = 'en-US';
+        recognition.lang = 'en-eg';
         recognition.interimResults = false;
         function CloseM(){
             sendButton();
@@ -29,7 +29,7 @@ var closeModal= document.querySelector('#close-modal');
         };
 
         recognition.onerror = function(event) {
-            userText.textContent = 'Error occurred in recognition: ' + event.error;
+            message.textContent = 'Error occurred in recognition: ' + event.error();
             
         }
         function VoiceReco(){

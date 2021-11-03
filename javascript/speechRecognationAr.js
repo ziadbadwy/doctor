@@ -1,4 +1,6 @@
 var textInput = document.querySelector('#textInput');
+var message = document.querySelector('#message');
+var closeModal= document.querySelector('#close-modal');
 
         var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
         var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
@@ -11,23 +13,25 @@ var textInput = document.querySelector('#textInput');
         recognition.grammars = speechRecognitionList;
         recognition.lang = 'ar-eg';
         recognition.interimResults = false;
-
+        function CloseM(){
+            sendButton();
+        }
+        message.value="";
         recognition.onresult = function(event) {
             var last = event.results.length - 1;
             var command = event.results[last][0].transcript;
             textInput.value = command;
-            sendButton();
+            message.textContent = `${'Voice Input: '} ${command} ${ '.'}`
         };
 
         recognition.onspeechend = function() {
             recognition.stop();
-            
-
         };
 
         recognition.onerror = function(event) {
-            userText.textContent = 'Error occurred in recognition: ' + event.error;
-        }        
+            message.textContent = 'Error occurred in recognition: ' + event.error();;
+            
+        }
         function VoiceReco(){
             recognition.start();
         }

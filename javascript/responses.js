@@ -41,7 +41,7 @@ function getBotResponse(input) {
         +"Email : ziadzamab@gmail.com";
     }
      // Simple responses
-     if (input.search('\.\*هاي') > 0 || input.search('\.\*هاي') ==0) {
+     else if (input.search('\.\*هاي') > 0 || input.search('\.\*هاي') ==0) {
         return "هاي! ^_^";
     } else if (input.search('\.\*باي') > 0 || input.search('\.\*باي') == 0) {
         return "باي! ^_^";
@@ -62,9 +62,10 @@ function getBotResponse(input) {
     else if (input.search('\.\*تسلم') > 0 || input.search('\.\*تسلم') == 0) {
         return "لا شكر علي واجب";
     }  
+  
     
     //english
-    if (input.search('\.\*ppointment') > 0 || input.search('\.\*ppointment') == 0) {
+     if (input.search('\.\*ppointment') > 0 || input.search('\.\*ppointment') == 0) {
         return "you can make appointment from the Appointment Section or call us on 011297546214";
     } else if (input.search('\.\*rice') > 0 || input.search('\.\*rice') == 0) {
         return "Cosmetic fillings : 1500LE\n"+"Orthodontics : 10000LE\n"+"Dental Implants : 500LE \n"+"for more information "
@@ -87,6 +88,7 @@ function getBotResponse(input) {
         +"phone : 01129777595 \n"
         +"Email : ziadzamab@gmail.com";
     }
+    
     
 //doctor ali
 else if (input.search('\.\*li') > 0 || input.search('\.\*li') == 0) {
@@ -112,7 +114,7 @@ else if (input.search('\.\*ly') > 0 || input.search('\.\*ly') == 0) {
    
 
     // Simple responses
-    if (input.search('\.\*ello') > 0 || input.search('\.\*ello') ==0) {
+    else if (input.search('\.\*ello') > 0 || input.search('\.\*ello') ==0) {
         return "Hello there! ^_^";
     } else if (input.search('\.\*ye') > 0 || input.search('\.\*ye') == 0) {
         return "Talk to you later! ^_^";
