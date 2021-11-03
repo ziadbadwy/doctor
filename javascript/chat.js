@@ -35,8 +35,7 @@ function getTime() {
 }
 
 // Gets the first message
-function firstBotMessage() {
-    let firstMessage = "I wish you have a nice day , you can ask me"
+function firstBotMessage(firstMessage ) {
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -45,7 +44,6 @@ function firstBotMessage() {
     document.getElementById("userInput").scrollIntoView(false);
 }
 
-firstBotMessage();
 
 // Retrieves the response
 function getHardResponse(userText) {

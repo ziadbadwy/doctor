@@ -1,5 +1,6 @@
 function getBotResponse(input) {
     //arabic
+    
     if (input.search('حجز') > 0 || input.search('حجز') == 0) {
         return "يمكنك حجز موعد من قسم الحجز أو الاتصال بنا على 011297546214";
     } else if (input.search('\.\*سعر') > 0 || input.search('\.\*سعر') == 0) {
@@ -136,9 +137,52 @@ else if (input.search('\.\*ly') > 0 || input.search('\.\*ly') == 0) {
     }  
     else if (input.search('\.\*hank') > 0 || input.search('\.\*hank') == 0) {
         return "you are welcome ^_^";
-    }  
+    }
+    //search social
+    else if (input.search('\.\*acebook') > 0 || input.search('\.\*acebook') == 0) {
+        window.open("https://www.facebook.com/");
+        return "ok";
+      }  
+      else if (input.search('\.\*nstagram') > 0 || input.search('\.\*nstagram') == 0) {
+        window.open("https://www.instagram.com/");
+        return "ok";
+      }  
+      //searchGoogle
+      else if (input.search('\.\*earch') > 0 || input.search('\.\*earch') == 0) {
+       let search="";
+       let i =input.length-1;
+       while(true){
+           if(input[i]==" " && input[i-1]=="r"){ 
+               if(input[i-2]=="o" &&input[i-3]=="f")
+            break;
+           }
+           else{
+            search = input[i] + search;
+            i--;
+           }
+       }
+       window.open("https://www.google.com/search?q="+search);
+        return ok;
+      }  
+      else if (input.search('\.\*بحث') > 0 || input.search('\.\*بحث') == 0) {
+        let search="";
+        let i =input.length-1;
+        while(true){
+            if(input[i]==" " && input[i-1]=="ن"){ 
+                if(input[i-2]=="ع")
+             break;
+            }
+            else{
+             search = input[i] + search;
+             i--;
+            }
+        }
+        window.open("https://www.google.com/search?q="+search);
+         return ok;
+       }  
     else {
         return "sorry I dont know You can call us on this number 011297546214 to know more about " +input;
     }
+    
     
 }

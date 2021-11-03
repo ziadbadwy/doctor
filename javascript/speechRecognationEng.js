@@ -13,6 +13,7 @@ var closeModal= document.querySelector('#close-modal');
         recognition.grammars = speechRecognitionList;
         recognition.lang = 'en-eg';
         recognition.interimResults = false;
+        let p = document.createElement("p");
         function CloseM(){
             sendButton();
         }
@@ -35,4 +36,8 @@ var closeModal= document.querySelector('#close-modal');
         function VoiceReco(){
             recognition.start();
         }
+        //firstBot msg
+        let firstMessage = "I wish you have a nice day , you can ask me any thing, if you want to search just say or type (search for 'what you Search')";
+        firstBotMessage(firstMessage);
+
 

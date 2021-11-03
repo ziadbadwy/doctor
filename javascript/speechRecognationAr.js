@@ -23,7 +23,6 @@ var closeModal= document.querySelector('#close-modal');
             textInput.value = command;
             message.textContent = `${'Voice Input: '} ${command} ${ '.'}`
         };
-
         recognition.onspeechend = function() {
             recognition.stop();
         };
@@ -35,4 +34,8 @@ var closeModal= document.querySelector('#close-modal');
         function VoiceReco(){
             recognition.start();
         }
+        //firstbotmsg
+        let firstMessage = "أتمنى لك يومًا سعيدًا ، يمكنك أن تسألني عن أي شيء ، إذا كنت تريد البحث فقط قل أو اكتب (ابحث عن 'ما تريد البحث عنه ')";
+        firstBotMessage(firstMessage);
+
 
